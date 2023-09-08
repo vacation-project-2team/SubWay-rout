@@ -5,7 +5,6 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowRight} from '@fortawesome/free-solid-svg-icons'
 import {faBullhorn} from '@fortawesome/free-solid-svg-icons'
 import SlowSub from "./SlowSub/SlowSub.js";
-
 function Main(p){
 
     let [UserName,SetUserName] = useState('유저1');
@@ -54,8 +53,11 @@ function Main(p){
                 <span>30분 이상 지연 된 전동열차만 표기 합니다</span>
 
                 <div className={styles.slowsub_list}>
-                    <SlowSub></SlowSub>
+                    <SlowSub subs={'1호선'} subimg={'/s1.png'}></SlowSub>
+                    <SlowSub subs={'1호선'} subimg={'/s1.png'}></SlowSub>
                 </div>
+
+                <button>+</button>
             </div>
 
         </div>

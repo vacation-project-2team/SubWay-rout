@@ -78,3 +78,8 @@
     font-weight: 500;
     line-height: normal;
 }
+
+.slowsub_list{
+    margin-top: 10px;
+    display: flex;
+}

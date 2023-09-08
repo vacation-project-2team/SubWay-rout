@@ -1,0 +1,12 @@
+.SlowSub{
+    display: flex;
+    align-items: center;
+    border: 0.5px solid #BCBCBC;
+    padding: 4px 8px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.SlowSub img{
+    margin-right: 3px;
+}
