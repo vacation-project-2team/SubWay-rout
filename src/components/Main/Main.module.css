@@ -66,5 +66,15 @@
 
 .slowsub>span:nth-child(1){
     font-size: 22px;
-    font-weight: bold;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.slowsub>span:nth-child(2){
+    color: #939191;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
