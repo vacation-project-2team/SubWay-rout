@@ -32,3 +32,39 @@
 .subway_know_list span{
     margin-right: 5px;
 }
+
+.news{
+    margin-top: 40px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.news>span{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.news_list{
+    display: flex;
+    align-items: center;
+    border: solid 1px #ccc;
+    border-radius: 12px;
+    padding: 10px 8px;
+}
+
+.speaker{
+    margin-right: 10px;
+}
+
+.slowsub{
+    margin-top: 40px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.slowsub>span:nth-child(1){
+    font-size: 22px;
+    font-weight: bold;
+}
