@@ -1,0 +1,34 @@
+.Main{
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+}
+
+.heading{
+    padding: 0 20px;
+    margin-top: 100px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.subway_know{
+    margin-top: 20px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 40%;
+}
+
+.subway_know_list{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.subway_know_list span{
+    margin-right: 5px;
+}
