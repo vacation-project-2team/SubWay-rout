@@ -80,6 +80,41 @@
 }
 
 .slowsub_list{
+    align-items: center;
     margin-top: 10px;
     display: flex;
+}
+
+.slowsub_btn{
+    border-radius: 50px;
+    background-color: white;
+    border: solid 0.5px #BCBCBC;;
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+}
+
+.subs_live{
+    margin-top: 40px;
+    padding: 0 20px;
+}
+
+.subs_live_btn{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.subs_live_btn button{
+    background-color: white;
+    border: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 50px;
+}
+
+.subs_live_btn button:nth-child(1){
+    margin-right: 20px;
 }
