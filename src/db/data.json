@@ -1,0 +1,64 @@
+{
+  "user": [
+    {
+      "UserName": "유저1"
+    }
+  ],
+
+  "Subway" : [
+    {
+      "FirstSb":"서울",
+      "SecSb" : "시청"
+    },
+    {
+      "News": "ITX-청춘 1호기 운행을 재개합니다."
+    }
+  ],
+
+  "LateSub": [
+    "1호선",
+    "2호선",
+    "3호선"
+  ],
+
+  "SubsLiveListHight" : [
+    {
+      "subName": "광운대",
+      "subLate": "20분",
+      "subGo": "회기",
+      "subGoen" : "도착"
+    },
+    {
+      "subName": "광운대",
+      "subLate": "20분",
+      "subGo": "회기",
+      "subGoen" : "도착"
+    },
+    {
+      "subName": "광운대",
+      "subLate": "20분",
+      "subGo": "회기",
+      "subGoen" : "도착"
+    },
+    {
+      "subName": "광운대",
+      "subLate": "20분",
+      "subGo": "회기",
+      "subGoen" : "도착"
+    }
+  ],
+  "SubsLiveListLow" : [
+    {
+      "subName": "회기",
+      "subLate": "10분",
+      "subGo": "인천",
+      "subGoen" : "출발"
+    },
+    {
+      "subName": "서울",
+      "subLate": "20분",
+      "subGo": "회기",
+      "subGoen" : "도착"
+    }
+  ]
+}

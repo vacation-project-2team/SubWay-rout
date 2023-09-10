@@ -6,24 +6,25 @@ import {faArrowRight} from '@fortawesome/free-solid-svg-icons'
 import {faBullhorn} from '@fortawesome/free-solid-svg-icons'
 import SlowSub from "./SlowSub/SlowSub.js";
 import SubsLiveList from "./SubsLiveList/SubsLiveList.js";
+import dummy from "../../db/data.json";
+
 function Main(p){
 
-    let [UserName,SetUserName] = useState('유저1');
+    let [UserName,SetUserName] = useState(dummy.user[0].UserName);
 
-    let [FirstSb,setFirstSb] = useState('남영');
+    let [FirstSb,setFirstSb] = useState(dummy.Subway[0].FirstSb);
     let [FirstSbimg,setFirstSbimg] = useState('/s1.png');
 
-    let [SecSb,setSecSb] = useState('시청');
+    let [SecSb,setSecSb] = useState(dummy.Subway[0].SecSb);
     let [SecSbimg,setSecSbimg] = useState('/s1.png');
 
-    let [News,setNews] = useState('ITX-청춘 1호기 운행을 재개합니다.');
+    let [News,setNews] = useState(dummy.Subway[1].News);
 
     let [SubHL,setSubHL] = useState(1);
 
     const btnStyle = {
         borderBottom: '1px solid black',
     }
-
     return(
         <div className={styles.Main}>
 
@@ -60,8 +61,13 @@ function Main(p){
                 <span>30분 이상 지연 된 전동열차만 표기 합니다</span>
 
                 <div className={styles.slowsub_list}>
-                    <SlowSub subs={'1호선'} subimg={'/s1.png'}></SlowSub>
-                    <SlowSub subs={'1호선'} subimg={'/s1.png'}></SlowSub>
+                    {
+                        dummy.LateSub.map((m,i)=>{
+                            return(
+                                <SlowSub subs={m} subimg={'/s1.png'}></SlowSub>
+                            )
+                        })
+                    }
                     <button className={styles.slowsub_btn} onClick={''}>+</button>
                 </div>
             </div>
@@ -82,9 +88,13 @@ function Main(p){
 function SubHight(p){
     return(
         <div>
-            <SubsLiveList subImg={'/s1.png'} subName={'광운대'} subLate={'20분'} subGo={'회기'} subGoen={'도착'}></SubsLiveList>
-            <SubsLiveList subImg={'/s1.png'} subName={'광운대'} subLate={'20분'} subGo={'회기'} subGoen={'도착'}></SubsLiveList>
-            <SubsLiveList subImg={'/s1.png'} subName={'광운대'} subLate={'20분'} subGo={'회기'} subGoen={'도착'}></SubsLiveList>
+            {
+                dummy.SubsLiveListHight.map((m,i)=>{
+                    return(
+                        <SubsLiveList subImg={'/s1.png'} subName={m.subName} subLate={m.subLate} subGo={m.subGo} subGoen={m.subGoen}></SubsLiveList>
+                    )
+                })
+            }
         </div>
     )
 }
@@ -92,9 +102,13 @@ function SubHight(p){
 function SubLow(p){
     return(
         <div>
-            <SubsLiveList subImg={'/s1.png'} subName={'광운대'} subLate={'20분'} subGo={'회기'} subGoen={'도착'}></SubsLiveList>
-            <SubsLiveList subImg={'/s1.png'} subName={'광운대'} subLate={'20분'} subGo={'회기'} subGoen={'도착'}></SubsLiveList>
-            <SubsLiveList subImg={'/s1.png'} subName={'광운대'} subLate={'20분'} subGo={'회기'} subGoen={'도착'}></SubsLiveList>
+            {
+                dummy.SubsLiveListLow.map((m,i)=>{
+                    return(
+                        <SubsLiveList subImg={'/s1.png'} subName={m.subName} subLate={m.subLate} subGo={m.subGo} subGoen={m.subGoen}></SubsLiveList>
+                    )
+                })
+            }
         </div>
     )
 }
