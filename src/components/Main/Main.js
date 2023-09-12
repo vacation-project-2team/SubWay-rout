@@ -29,6 +29,7 @@ function Main(p){
         <div className={styles.Main}>
 
             <div className={styles.heading}>
+                <img src={'/favicon.ico'}/>
                 <span><strong>{UserName}</strong> 님 께서</span>
                 <span><strong>자주</strong> 이용하시는 구간은</span>
             </div>
@@ -64,11 +65,11 @@ function Main(p){
                     {
                         dummy.LateSub.map((m,i)=>{
                             return(
-                                <SlowSub subs={m} subimg={'/s1.png'}></SlowSub>
+                                <SlowSub key={i} subs={m} subimg={'/s1.png'}></SlowSub>
                             )
                         })
                     }
-                    <button className={styles.slowsub_btn} onClick={''}>+</button>
+                    <button className={styles.slowsub_btn}>+</button>
                 </div>
             </div>
 
@@ -91,7 +92,7 @@ function SubHight(p){
             {
                 dummy.SubsLiveListHight.map((m,i)=>{
                     return(
-                        <SubsLiveList subImg={'/s1.png'} subName={m.subName} subLate={m.subLate} subGo={m.subGo} subGoen={m.subGoen}></SubsLiveList>
+                        <SubsLiveList key={i} subImg={'/s1.png'} subName={m.subName} subLate={m.subLate} subGo={m.subGo} subGoen={m.subGoen}></SubsLiveList>
                     )
                 })
             }
@@ -105,7 +106,7 @@ function SubLow(p){
             {
                 dummy.SubsLiveListLow.map((m,i)=>{
                     return(
-                        <SubsLiveList subImg={'/s1.png'} subName={m.subName} subLate={m.subLate} subGo={m.subGo} subGoen={m.subGoen}></SubsLiveList>
+                        <SubsLiveList key={i} subImg={'/s1.png'} subName={m.subName} subLate={m.subLate} subGo={m.subGo} subGoen={m.subGoen}></SubsLiveList>
                     )
                 })
             }
